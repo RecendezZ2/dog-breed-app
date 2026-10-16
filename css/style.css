@@ -1,0 +1,83 @@
+#results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 25px auto;
+  padding: 15px;
+}
+body {
+  color: white;
+    background-image: url("https://media.istockphoto.com/id/182361617/photo/green-grass-field.jpg?s=612x612&w=0&k=20&c=2TQfJJZuZdjJko8XdF6LHts7Ztk0hYtJ3I8uw-FZutE=");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  border-top: 1rem  double black;
+   border-bottom: 1rem  double black;
+}
+#dogForm {
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  padding-left: 13rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrpx7ucYzXVkezh202-JpnlPbzT9Yyx8DpDFLI5Ylzyw&s=10");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  border-top: 1rem  double black;
+   border-bottom: 1rem  double black;
+   color: black;
+   font-weight: 700;
+}
+.dog-card {
+  background-color: #ffffff;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.dog-card:hover {
+  transform: translateY(-5px);
+  border-color: #4361ee;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dog-card img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.dog-card h3 {
+  margin: 16px 16px 10px;
+  color: #253578;
+  font-size: 1.4rem;
+}
+
+.dog-card p {
+  margin: 10px 16px 16px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.dog-card.selected {
+  border-color: #4361ee;
+  background-color: #eef2ff;
+  box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.25);
+}
+
+#resultsHeading {
+  color: white;
+}
+

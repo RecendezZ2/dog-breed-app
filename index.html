@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dog Breed Finder</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Load your JavaScript after the HTML has been parsed -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Dog Breed Finder</h1>
+        <p>Search for a dog breed or choose a temperament.</p>
+    </header>
+
+    <main>
+        <form id="dogForm">
+            <!-- Breed name input -->
+            <div>
+                <label for="breed">Breed name:</label>
+                <input type="text" id="breed" name="breed" placeholder="Example: Labrador" />
+            </div>
+            <br>
+
+            <!-- Temperament dropdown -->
+            <div>
+                <label for="temperament">Temperament:</label>
+                <select id="temperament" name="temperament">
+                    <option value="">All temperaments</option>
+                    <option value="Friendly">Friendly</option>
+                    <option value="Intelligent">Intelligent</option>
+                    <option value="Energetic">Energetic</option>
+                    <option value="Playful">Playful</option>
+                    <option value="Loyal">Loyal</option>
+                    <option value="Gentle">Gentle</option>
+                    <option value="Protective">Protective</option>
+                </select>
+            </div>
+            <br>
+
+            <button type="submit">Find Dogs</button>
+        </form>
+
+        <section aria-labelledby="resultsHeading">
+            <h2 id="resultsHeading">Search Results</h2>
+
+            <!-- displayDogs() function adds dog cards-->
+            <div id="results" aria-live="polite"></div>
+        </section>
+    </main>
+</body>
+
+</html>
